@@ -1,0 +1,11 @@
+def Regex(x):
+    try:
+        if"select *" not in x:
+            if "evnt =" and "page_name = " in x:
+                return "Found!"
+        else:
+            return "Not Found!"
+        except:
+            return "Not Found!"
+x=input()
+print(Regex(x))
